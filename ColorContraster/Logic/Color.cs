@@ -29,6 +29,14 @@ namespace Logic
             red = c.red; green = c.green; blue = c.blue;
         }
 
+        /// <summary>
+        /// Init a color
+        /// </summary>
+        /// <param name="c">the standard .NET Color type</param>
+        public Color(System.Drawing.Color c)
+        {
+            red = c.R; green = c.G; blue = c.B;
+        }
 
         /// <summary>
         /// Gets or sets red value
@@ -84,11 +92,15 @@ namespace Logic
         }
 
         /// <summary>
-        /// Gets the HTML code of color
+        /// Gets or sets the HTML code of color
         /// </summary>
         public string HTMLCode
         {
             get => string.Format("#{0:X2}{1:X2}{2:X2}", red, green, blue);
+            set
+            {
+                // todo
+            }
         }
 
         public override bool Equals(object obj)
