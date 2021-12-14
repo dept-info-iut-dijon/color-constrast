@@ -59,15 +59,19 @@ namespace ColorContraster.ViewModels
 
         #region foreground properties
 
-        public System.Drawing.Color ForeColor
+        public System.Windows.Media.Color ForeColor
         {
-            get => model.Foreground.StdColor;
+            get
+            {
+                return System.Windows.Media.Color.FromRgb(model.Foreground.Red, model.Foreground.Green, model.Foreground.Blue);
+            }
             set
             {
-                model.Foreground = new Logic.Color(value);
+                model.Foreground = new Logic.Color(value.R, value.G, value.B);
                 ForegroundChange();
             }
         }        
+        
 
         public byte ForeRed
         {
@@ -111,12 +115,15 @@ namespace ColorContraster.ViewModels
         #endregion
 
         #region background properties
-        public System.Drawing.Color Background
+        public System.Windows.Media.Color BackColor
         {
-            get => model.Background.StdColor;
+            get
+            {
+                return System.Windows.Media.Color.FromRgb(model.Background.Red, model.Background.Green, model.Background.Blue);
+            }
             set
             {
-                model.Background = new Logic.Color(value);
+                model.Background = new Logic.Color(value.R, value.G, value.B);
                 BackgroundChange();
             }
         }

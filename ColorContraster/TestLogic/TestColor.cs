@@ -61,13 +61,6 @@ namespace TestLogic
             Assert.Equal(0, test.Luminance, 4);
         }
 
-        [Fact]
-        public void TestStdColor()
-        {
-            Color test = new Color(0xFA, 0x70, 0x14);
-            System.Drawing.Color c = test.StdColor;
-            Assert.Equal(0xFA, c.R);
-            Assert.Equal(0xFFFA7014, (UInt32)c.ToArgb());
-        }
+        
     }
 }

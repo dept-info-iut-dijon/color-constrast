@@ -20,9 +20,16 @@ namespace ColorContraster
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Logic.Analyzer analyzer;
         public MainWindow()
         {
             InitializeComponent();
+            analyzer = new Logic.Analyzer();
+            analyzer.Background = new Logic.Color(50,50,50);
+            analyzer.Foreground = new Logic.Color(200, 200, 200);
+
+            DataContext = new ViewModels.AnalyzerVM(analyzer);
+
         }
     }
 }

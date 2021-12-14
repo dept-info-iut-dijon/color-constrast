@@ -39,19 +39,15 @@ namespace Logic
             red = c.red; green = c.green; blue = c.blue;
         }
 
+        /// <summary>
+        /// Init a color
+        /// </summary>
+        /// <param name="rvb">32-bits RVB</param>
         public Color(int rvb)
         {
             FromInt(rvb);
         }
-
-        /// <summary>
-        /// Init a color
-        /// </summary>
-        /// <param name="c">the standard .NET Color type</param>
-        public Color(System.Drawing.Color c)
-        {
-            red = c.R; green = c.G; blue = c.B;
-        }
+        
 
         /// <summary>
         /// Gets or sets red value
@@ -88,23 +84,7 @@ namespace Logic
                 return 0.2126*r + 0.7152*v + 0.0722*b;
             }
         }
-
-        /// <summary>
-        /// Gets or sets the color in a standard .NET type
-        /// </summary>
-        public System.Drawing.Color StdColor
-        {
-            get
-            {
-                return System.Drawing.Color.FromArgb(255, red, green, Blue);
-            }
-            set
-            {
-                red = value.R;
-                green = value.G;
-                blue = value.B;
-            }
-        }
+        
 
         /// <summary>
         /// Gets or sets the HTML code of color
