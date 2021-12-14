@@ -97,6 +97,24 @@ namespace ColorContraster.Res {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Large-size text.
+        /// </summary>
+        public static string LargeText {
+            get {
+                return ResourceManager.GetString("LargeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Contrast ratio.
+        /// </summary>
+        public static string Ratio {
+            get {
+                return ResourceManager.GetString("Ratio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Red.
         /// </summary>
         public static string Red {
@@ -106,11 +124,38 @@ namespace ColorContraster.Res {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Sample text.
+        /// </summary>
+        public static string SampleText {
+            get {
+                return ResourceManager.GetString("SampleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Normal-size text.
+        /// </summary>
+        public static string SmallText {
+            get {
+                return ResourceManager.GetString("SmallText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Color contrast analyzer.
         /// </summary>
         public static string Title {
             get {
                 return ResourceManager.GetString("Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à WCAG rules.
+        /// </summary>
+        public static string WCAG {
+            get {
+                return ResourceManager.GetString("WCAG", resourceCulture);
             }
         }
     }

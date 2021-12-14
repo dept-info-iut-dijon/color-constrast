@@ -7,7 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Img\nok.png" />
+    <None Remove="Img\ok.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Logic\Logic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Img\nok.png" />
+    <Resource Include="Img\ok.png" />
   </ItemGroup>
 
   <ItemGroup>

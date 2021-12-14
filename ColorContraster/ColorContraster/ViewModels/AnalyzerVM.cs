@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Text;
+using System.Windows.Controls;
+using System.Windows.Media.Imaging;
 
 namespace ColorContraster.ViewModels
 {
@@ -165,6 +167,58 @@ namespace ColorContraster.ViewModels
             {
                 model.Background.HTMLCode = value;
                 BackgroundChange();
+            }
+        }
+        #endregion
+
+        #region WCAG properties
+        public string Ratio
+        {
+            get
+            {
+                return string.Format("{0:F}:1", model.Ratio);
+            }
+        }
+
+        private const string baseuri = "pack://application:,,,/ColorContraster;component/Img/";
+        public BitmapImage SmallTextAA
+        {
+            get
+            {
+                
+                string uri = baseuri + ((model.SmallTextAA) ? "ok.png" : "nok.png");
+                BitmapImage bmp = new BitmapImage(new Uri(uri));
+                return bmp;
+            }
+        }
+        public BitmapImage SmallTextAAA
+        {
+            get
+            {
+
+                string uri = baseuri  + ((model.SmallTextAAA) ? "ok.png" : "nok.png");
+                BitmapImage bmp = new BitmapImage(new Uri(uri));
+                return bmp;
+            }
+        }
+        public BitmapImage LargeTextAA
+        {
+            get
+            {
+
+                string uri = baseuri + ((model.LargeTextAA) ? "ok.png" : "nok.png");
+                BitmapImage bmp = new BitmapImage(new Uri(uri));
+                return bmp;
+            }
+        }
+        public BitmapImage LargeTextAAA
+        {
+            get
+            {
+
+                string uri = baseuri + ((model.LargeTextAAA) ? "ok.png" : "nok.png");
+                BitmapImage bmp = new BitmapImage(new Uri(uri));
+                return bmp;
             }
         }
         #endregion

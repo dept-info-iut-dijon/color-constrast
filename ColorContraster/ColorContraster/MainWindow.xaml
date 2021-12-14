@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:ColorContraster"
         xmlns:res="clr-namespace:ColorContraster.Res"
         mc:Ignorable="d"
+        FontFamily="Segoe"
+        FontSize="18"
         Title="{x:Static res:Strings.Title}" Height="450" Width="800">
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -76,5 +79,51 @@
             </Grid>
 
         </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Ratio}" FontWeight="Bold" />
+            <TextBox Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Center" HorizontalContentAlignment="Right" Text="{Binding Ratio, Mode=OneWay}" IsReadOnly="True" Margin="4" FontWeight="Bold" />
+            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="{x:Static res:Strings.WCAG}" FontWeight="Bold" />
+            <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="{x:Static res:Strings.SmallText}" />
+            <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{x:Static res:Strings.SampleText}" >
+                <Label.Foreground>
+                    <SolidColorBrush Color="{Binding ForeColor}" />
+                </Label.Foreground>
+                <Label.Background>
+                    <SolidColorBrush Color="{Binding BackColor}" />
+                </Label.Background>
+            </Label>
+            <Label Grid.Row="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="{x:Static res:Strings.LargeText}" />
+            <Label Grid.Row="3" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{x:Static res:Strings.SampleText}" FontSize="28" >
+                <Label.Foreground>
+                    <SolidColorBrush Color="{Binding ForeColor}" />
+                </Label.Foreground>
+                <Label.Background>
+                    <SolidColorBrush Color="{Binding BackColor}" />
+                </Label.Background>
+            </Label>
+
+            <Label Grid.Row="2" Grid.Column="2" Content="AA" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Label Grid.Row="3" Grid.Column="2" Content="AAA" HorizontalAlignment="Center" VerticalAlignment="Center" />
+ 
+            <Image Grid.Row="2" Grid.Column="1" Source="{Binding SmallTextAA}" />
+            <Image Grid.Row="3" Grid.Column="1" Source="{Binding SmallTextAAA}" />
+            <Image Grid.Row="2" Grid.Column="3" Source="{Binding LargeTextAA}" />
+            <Image Grid.Row="3" Grid.Column="3" Source="{Binding LargeTextAAA}" />
+            
+        </Grid> 
     </Grid>
 </Window>
