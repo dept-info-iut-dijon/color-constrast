@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorContraster", "ColorContraster\ColorContraster.csproj", "{131FBFDE-040A-45E7-95FE-39A10A6E795B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{5AA59D3D-7F24-4DA7-A76B-88DC732F2E4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLogic", "TestLogic\TestLogic.csproj", "{A4123075-80D8-4C85-86D9-A3C26120180A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{131FBFDE-040A-45E7-95FE-39A10A6E795B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{131FBFDE-040A-45E7-95FE-39A10A6E795B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{131FBFDE-040A-45E7-95FE-39A10A6E795B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA59D3D-7F24-4DA7-A76B-88DC732F2E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA59D3D-7F24-4DA7-A76B-88DC732F2E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA59D3D-7F24-4DA7-A76B-88DC732F2E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA59D3D-7F24-4DA7-A76B-88DC732F2E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4123075-80D8-4C85-86D9-A3C26120180A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4123075-80D8-4C85-86D9-A3C26120180A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4123075-80D8-4C85-86D9-A3C26120180A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4123075-80D8-4C85-86D9-A3C26120180A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
