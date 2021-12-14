@@ -23,6 +23,23 @@ namespace TestLogic
             Assert.Equal("#FFFFFF", test.HTMLCode);
             test = new Color(0x12, 0x03, 0xA4);
             Assert.Equal("#1203A4", test.HTMLCode);
+
+            test.HTMLCode = "#12345A";
+            Assert.Equal(0x12, test.Red);
+            Assert.Equal(0x34, test.Green);
+            Assert.Equal(0x5A, test.Blue);
+            Assert.Equal("#12345A", test.HTMLCode);
+
+            Random r = new Random();
+            test.Red = (byte)r.Next(255);
+            test.Green = (byte)r.Next(255);
+            test.Blue = (byte)r.Next(255);
+            string code = test.HTMLCode;
+            Color test2 = new Color();
+            test2.HTMLCode = code;
+            Assert.Equal(test, test2);
+
+
         }
 
         [Fact]

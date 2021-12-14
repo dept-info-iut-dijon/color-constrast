@@ -2,12 +2,22 @@
 
 namespace Logic
 {
+    class ColorException : Exception { }
+    class BadHTMLCode : ColorException { }
+
     /// <summary>
     /// Simple color
     /// </summary>
     public class Color
     {
         private byte red, green, blue;
+
+        private void FromInt(int rvb)
+        {
+            red = (byte)((rvb & 0xFF0000) >> 16);
+            green = (byte)((rvb & 0x00FF00) >> 8);
+            blue = (byte)((rvb & 0x0000FF));
+        }
 
         /// <summary>
         /// Init a color
@@ -27,6 +37,11 @@ namespace Logic
         public Color(Color c)
         {
             red = c.red; green = c.green; blue = c.blue;
+        }
+
+        public Color(int rvb)
+        {
+            FromInt(rvb);
         }
 
         /// <summary>
@@ -99,7 +114,11 @@ namespace Logic
             get => string.Format("#{0:X2}{1:X2}{2:X2}", red, green, blue);
             set
             {
-                // todo
+                if (value == null || value.Length != 7 || value[0] != '#')
+                    throw new BadHTMLCode();
+                string temp = value.Replace("#", "0x");
+                int val = Convert.ToInt32(temp, 16);
+                FromInt(val);                
             }
         }
 
