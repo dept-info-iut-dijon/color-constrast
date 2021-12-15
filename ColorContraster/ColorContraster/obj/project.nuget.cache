@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "c12TwGC+HJE5i6RYK4lBKt7zCk05LFZmD6HACMmPOIEUPJkpYuhPQ+N4Rhp6oxZ+SqiQ3X9W3hOrUNapay5pBA==",
+  "dgSpecHash": "MERQuk6AeLze6c7aFT1qNSnqeP+3qrklIXreD0z9qfCmsx4MBcVZ3wi2rQSwNFrIPcXrFShE9XyOm2LHdyx4aw==",
   "success": true,
   "projectFilePath": "C:\\Users\\aguidet.IUT21\\Source\\Repos\\color-constrast\\ColorContraster\\ColorContraster\\ColorContraster.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aguidet.IUT21\\.nuget\\packages\\egorozh.colorpicker.core\\1.0.1\\egorozh.colorpicker.core.1.0.1.nupkg.sha512",
+    "C:\\Users\\aguidet.IUT21\\.nuget\\packages\\egorozh.colorpicker.wpf\\5.0.0\\egorozh.colorpicker.wpf.5.0.0.nupkg.sha512",
+    "C:\\Users\\aguidet.IUT21\\.nuget\\packages\\egorozh.colorpicker.wpf.dialog\\5.0.0\\egorozh.colorpicker.wpf.dialog.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

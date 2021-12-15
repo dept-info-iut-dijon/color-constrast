@@ -4,6 +4,16 @@
              xmlns:local="clr-namespace:ColorContraster"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <Style TargetType="TextBox">
+                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+            </Style>
+            <Style TargetType="TextBlock" x:Key="link">
+                <Setter Property="TextDecorations" Value="Underline"/>
+                <Setter Property="Foreground" Value="Blue" />
+                <Setter Property="Cursor" Value="Hand" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

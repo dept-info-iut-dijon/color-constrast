@@ -4,11 +4,20 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Img\picker.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Img\info.png" />
     <None Remove="Img\nok.png" />
     <None Remove="Img\ok.png" />
+    <None Remove="Img\picker.ico" />
+    <None Remove="Img\picker.png" />
+    <None Remove="Img\wheel.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Egorozh.ColorPicker.WPF.Dialog" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,8 +25,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Img\info.png" />
     <Resource Include="Img\nok.png" />
     <Resource Include="Img\ok.png" />
+    <Resource Include="Img\picker.ico" />
+    <Resource Include="Img\picker.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Img\wheel.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

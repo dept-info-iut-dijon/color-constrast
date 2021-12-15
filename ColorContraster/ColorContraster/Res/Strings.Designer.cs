@@ -61,6 +61,15 @@ namespace ColorContraster.Res {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Alexandre Guidet.
+        /// </summary>
+        public static string Author {
+            get {
+                return ResourceManager.GetString("Author", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à Background color.
         /// </summary>
         public static string BackName {
@@ -75,6 +84,25 @@ namespace ColorContraster.Res {
         public static string Blue {
             get {
                 return ResourceManager.GetString("Blue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à The purpose of the application is to calculate the contrast ratio between a foreground color and a background color, so that it can meet WCAG accessibility recommendations.
+        ///Different possibilities are offered to choose the color (input of RGB components, HTML code, choice in a palette, &quot;pipette&quot; on the screen ...), the calculation of the ratio is automatic. Sample text using the chosen colors is provided. Icons directly indicate whether WCAG recommendations are met or not..
+        /// </summary>
+        public static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à https://github.com/egorozh/Egorozh.ColorPicker.
+        /// </summary>
+        public static string EgorozhURL {
+            get {
+                return ResourceManager.GetString("EgorozhURL", resourceCulture);
             }
         }
         
@@ -102,6 +130,33 @@ namespace ColorContraster.Res {
         public static string LargeText {
             get {
                 return ResourceManager.GetString("LargeText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à https://github.com/dept-info-iut-dijon/color-constrast/.
+        /// </summary>
+        public static string MyGitURL {
+            get {
+                return ResourceManager.GetString("MyGitURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Choose a color.
+        /// </summary>
+        public static string PickerTitle {
+            get {
+                return ResourceManager.GetString("PickerTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à About.
+        /// </summary>
+        public static string ProposTitle {
+            get {
+                return ResourceManager.GetString("ProposTitle", resourceCulture);
             }
         }
         
@@ -151,11 +206,38 @@ namespace ColorContraster.Res {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à Use the ColorPicker component by Egorozh.
+        /// </summary>
+        public static string UsePicker {
+            get {
+                return ResourceManager.GetString("UsePicker", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Version {0} - {1}.
+        /// </summary>
+        public static string VersionNumber {
+            get {
+                return ResourceManager.GetString("VersionNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à WCAG rules.
         /// </summary>
         public static string WCAG {
             get {
                 return ResourceManager.GetString("WCAG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Choose a color.
+        /// </summary>
+        public static string WheelTip {
+            get {
+                return ResourceManager.GetString("WheelTip", resourceCulture);
             }
         }
     }

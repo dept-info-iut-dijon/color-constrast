@@ -61,6 +61,10 @@ namespace ColorContraster.ViewModels
 
         #region foreground properties
 
+
+        /// <summary>
+        /// Couleur de 1er plan
+        /// </summary>
         public System.Windows.Media.Color ForeColor
         {
             get
@@ -74,6 +78,9 @@ namespace ColorContraster.ViewModels
             }
         }        
         
+        /// <summary>
+        /// Composante rouge de la couleur de 1er plan
+        /// </summary>
 
         public byte ForeRed
         {
@@ -85,6 +92,9 @@ namespace ColorContraster.ViewModels
             }
         }
 
+        /// <summary>
+        /// Composante bleue de la couleur de 1er plan
+        /// </summary>
         public byte ForeBlue
         {
             get => model.Foreground.Blue;
@@ -95,6 +105,9 @@ namespace ColorContraster.ViewModels
             }
         }
 
+        /// <summary>
+        /// Composante verte de la couleur de 1er plan
+        /// </summary>
         public byte ForeGreen
         {
             get => model.Foreground.Green;
@@ -105,6 +118,9 @@ namespace ColorContraster.ViewModels
             }
         }
 
+        /// <summary>
+        /// Code HTML de la couleur de 1er plan
+        /// </summary>
         public string ForeHTML
         {
             get => model.Foreground.HTMLCode;
@@ -117,6 +133,9 @@ namespace ColorContraster.ViewModels
         #endregion
 
         #region background properties
+        /// <summary>
+        /// Couleur d'arrière-plan
+        /// </summary>
         public System.Windows.Media.Color BackColor
         {
             get
@@ -130,6 +149,10 @@ namespace ColorContraster.ViewModels
             }
         }
 
+
+        /// <summary>
+        /// Composante rouge de la couleur d'arrière-plan
+        /// </summary>
         public byte BackRed
         {
             get => model.Background.Red;
@@ -140,6 +163,9 @@ namespace ColorContraster.ViewModels
             }
         }
 
+        /// <summary>
+        /// Composante verte de la couleur d'arrière-plan
+        /// </summary>
         public byte BackGreen
         {
             get => model.Background.Green;
@@ -150,6 +176,9 @@ namespace ColorContraster.ViewModels
             }
         }
 
+        /// <summary>
+        /// Composante bleue de la couleur d'arrière-plan
+        /// </summary>
         public byte BackBlue
         {
             get => model.Background.Blue;
@@ -160,6 +189,9 @@ namespace ColorContraster.ViewModels
             }
         }
 
+        /// <summary>
+        /// Code HTML de la couleur d'arrière-plan
+        /// </summary>
         public string BackHTML
         {
             get => model.Background.HTMLCode;
@@ -172,6 +204,9 @@ namespace ColorContraster.ViewModels
         #endregion
 
         #region WCAG properties
+        /// <summary>
+        /// Ratio de contraste
+        /// </summary>
         public string Ratio
         {
             get
@@ -181,6 +216,10 @@ namespace ColorContraster.ViewModels
         }
 
         private const string baseuri = "pack://application:,,,/ColorContraster;component/Img/";
+
+        /// <summary>
+        /// Image indiquant si le critère AA est validé ou non pour du texte normal
+        /// </summary>
         public BitmapImage SmallTextAA
         {
             get
@@ -191,6 +230,9 @@ namespace ColorContraster.ViewModels
                 return bmp;
             }
         }
+        /// <summary>
+        /// Image indiquant si le critère AAA est validé ou non pour du texte normal
+        /// </summary>
         public BitmapImage SmallTextAAA
         {
             get
@@ -201,6 +243,9 @@ namespace ColorContraster.ViewModels
                 return bmp;
             }
         }
+        /// <summary>
+        /// Image indiquant si le critère AA est validé ou non pour du texte agrandi
+        /// </summary>
         public BitmapImage LargeTextAA
         {
             get
@@ -211,6 +256,9 @@ namespace ColorContraster.ViewModels
                 return bmp;
             }
         }
+        /// <summary>
+        /// Image indiquant si le critère AAA est validé ou non pour du texte agrandi
+        /// </summary>
         public BitmapImage LargeTextAAA
         {
             get

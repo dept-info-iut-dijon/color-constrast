@@ -117,11 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Author" xml:space="preserve">
+    <value>Alexandre Guidet</value>
+  </data>
   <data name="BackName" xml:space="preserve">
     <value>Couleur d'arrière-plan</value>
   </data>
   <data name="Blue" xml:space="preserve">
     <value>Bleu</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Le but de l’application est de calculer le taux de contraste entre une couleur d’avant-plan et une couleur d’arrière-plan, afin de pouvoir respecter les recommandations WCAG sur l’accessibilité.
+Différentes possibilités sont offertes pour choisir la couleur (saisie des composantes RVB, du code HTML, choix dans une palette, « pipette » sur l’écran…), le calcul du ratio est automatique. Un texte d’exemple utilisant les couleurs choisies est fourni. Des icones indiquent directement si les recommandations WCAG sont respectées ou non.</value>
+  </data>
+  <data name="EgorozhURL" xml:space="preserve">
+    <value>https://github.com/egorozh/Egorozh.ColorPicker</value>
   </data>
   <data name="ForeName" xml:space="preserve">
     <value>Couleur de premier plan</value>
@@ -131,6 +141,15 @@
   </data>
   <data name="LargeText" xml:space="preserve">
     <value>Texte agrandi</value>
+  </data>
+  <data name="MyGitURL" xml:space="preserve">
+    <value>https://github.com/dept-info-iut-dijon/color-constrast/</value>
+  </data>
+  <data name="PickerTitle" xml:space="preserve">
+    <value>Choisir une couleur</value>
+  </data>
+  <data name="ProposTitle" xml:space="preserve">
+    <value>A propos de...</value>
   </data>
   <data name="Ratio" xml:space="preserve">
     <value>Ratio de contraste</value>
@@ -147,7 +166,16 @@
   <data name="Title" xml:space="preserve">
     <value>Analyseur de contraste de couleurs</value>
   </data>
+  <data name="UsePicker" xml:space="preserve">
+    <value>Utilise le composant ColorPicker par Egorozh</value>
+  </data>
+  <data name="VersionNumber" xml:space="preserve">
+    <value>Version {0} - {1}</value>
+  </data>
   <data name="WCAG" xml:space="preserve">
     <value>Recommandations WCAG</value>
+  </data>
+  <data name="WheelTip" xml:space="preserve">
+    <value>Choisir une couleur</value>
   </data>
 </root>

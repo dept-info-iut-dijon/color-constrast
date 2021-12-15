@@ -2,6 +2,46 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Egorozh.ColorPicker.Core/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/Egorozh.ColorPicker.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Egorozh.ColorPicker.Core.dll": {}
+        }
+      },
+      "Egorozh.ColorPicker.WPF/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Egorozh.ColorPicker.Core": "1.0.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Egorozh.ColorPicker.WPF.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Egorozh.ColorPicker.WPF.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
+      "Egorozh.ColorPicker.WPF.Dialog/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Egorozh.ColorPicker.WPF": "5.0.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Egorozh.ColorPicker.WPF.Dialog.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Egorozh.ColorPicker.WPF.Dialog.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App",
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "Logic/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -15,6 +55,52 @@
     }
   },
   "libraries": {
+    "Egorozh.ColorPicker.Core/1.0.1": {
+      "sha512": "oaMYcA2Tw4lKnYM0f+uUB3bYp11z/8Ny9I6E0398lLbPCKgvYoM5jAJtjmYL/GWA32mWSfYUhH4mDRvV5SWAVQ==",
+      "type": "package",
+      "path": "egorozh.colorpicker.core/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "egorozh.colorpicker.core.1.0.1.nupkg.sha512",
+        "egorozh.colorpicker.core.nuspec",
+        "lib/net47/Egorozh.ColorPicker.Core.dll",
+        "lib/net5.0/Egorozh.ColorPicker.Core.dll",
+        "lib/netcoreapp3.0/Egorozh.ColorPicker.Core.dll",
+        "lib/netstandard2.0/Egorozh.ColorPicker.Core.dll"
+      ]
+    },
+    "Egorozh.ColorPicker.WPF/5.0.0": {
+      "sha512": "/qUoaKjYO5qHrPJ/LwaphgBqnaqyHrdTnjyi1sASo5TOfc74nwLW6HuiFsY1ceiljZdRK9CUAbX4/+mkQi+OHg==",
+      "type": "package",
+      "path": "egorozh.colorpicker.wpf/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "egorozh.colorpicker.wpf.5.0.0.nupkg.sha512",
+        "egorozh.colorpicker.wpf.nuspec",
+        "lib/net47/Egorozh.ColorPicker.WPF.dll",
+        "lib/net5.0-windows7.0/Egorozh.ColorPicker.WPF.dll",
+        "lib/netcoreapp3.0/Egorozh.ColorPicker.WPF.dll"
+      ]
+    },
+    "Egorozh.ColorPicker.WPF.Dialog/5.0.0": {
+      "sha512": "NEaYrrtZDkQtOZnf8WHiG0/RtnZgFBi3emKMnm4/UR/fl6czjDdjVt9Ug40RpeNIATp6wBHo9ldpNDAYscf1zQ==",
+      "type": "package",
+      "path": "egorozh.colorpicker.wpf.dialog/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "egorozh.colorpicker.wpf.dialog.5.0.0.nupkg.sha512",
+        "egorozh.colorpicker.wpf.dialog.nuspec",
+        "lib/net47/Egorozh.ColorPicker.WPF.Dialog.dll",
+        "lib/net5.0-windows7.0/Egorozh.ColorPicker.WPF.Dialog.dll",
+        "lib/netcoreapp3.0/Egorozh.ColorPicker.WPF.Dialog.dll"
+      ]
+    },
     "Logic/1.0.0": {
       "type": "project",
       "path": "../Logic/Logic.csproj",
@@ -23,6 +109,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Egorozh.ColorPicker.WPF.Dialog >= 5.0.0",
       "Logic >= 1.0.0"
     ]
   },
@@ -78,6 +165,12 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "Egorozh.ColorPicker.WPF.Dialog": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

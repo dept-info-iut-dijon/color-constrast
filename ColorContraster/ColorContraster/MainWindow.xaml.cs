@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Egorozh.ColorPicker.Dialog;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,6 +22,7 @@ namespace ColorContraster
     public partial class MainWindow : Window
     {
         private Logic.Analyzer analyzer;
+        private ViewModels.AnalyzerVM analyzerVM;
         public MainWindow()
         {
             InitializeComponent();
@@ -28,8 +30,37 @@ namespace ColorContraster
             analyzer.Background = new Logic.Color(50,50,50);
             analyzer.Foreground = new Logic.Color(200, 200, 200);
 
-            DataContext = new ViewModels.AnalyzerVM(analyzer);
+            DataContext = analyzerVM = new ViewModels.AnalyzerVM(analyzer);
 
+        }
+
+        private void ChooseFore(object sender, RoutedEventArgs e)
+        {
+            analyzerVM.ForeColor=Choose(analyzerVM.ForeColor);
+        }
+
+        private void ChooseBack(object sender, RoutedEventArgs e)
+        {
+            analyzerVM.BackColor=Choose(analyzerVM.BackColor);
+        }
+
+        private Color Choose(Color start)
+        {
+            Color choix = start;
+            ColorPickerDialog dial = new ColorPickerDialog();
+            dial.Color = start;
+            dial.Title = Res.Strings.PickerTitle;            
+            if(dial.ShowDialog()==true)
+            {
+                choix = dial.Color;
+            }
+            return choix;
+        }
+
+        private void What(object sender, RoutedEventArgs e)
+        {
+            AProposDe dial = new AProposDe();
+            dial.Show();
         }
     }
 }

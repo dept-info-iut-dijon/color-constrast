@@ -8,8 +8,11 @@
         mc:Ignorable="d"
         FontFamily="Segoe"
         FontSize="18"
-        Title="{x:Static res:Strings.Title}" Height="450" Width="800">
-    
+        Title="{x:Static res:Strings.Title}"
+        MinWidth="500"
+        MinHeight="350"
+        Height="600" Width="800">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -21,6 +24,7 @@
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
@@ -29,33 +33,33 @@
                 <RowDefinition Height="* "/>
                 <RowDefinition Height="* "/>
                 <RowDefinition Height="* "/>
-                <RowDefinition Height="* "/>
+                <RowDefinition Height="2* "/>
             </Grid.RowDefinitions>
             <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Content="{x:Static res:Strings.ForeName}" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" />
-            <Label Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" Content="{x:Static res:Strings.BackName}" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" />
+            <Label Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="3" Content="{x:Static res:Strings.BackName}" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" />
             <Label Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Red}" />
-            <Label Grid.Row="1" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Red}" />
+            <Label Grid.Row="1" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Red}" />
             <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Green}" />
-            <Label Grid.Row="2" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Green}" />
-            <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Blue}" />
-            <Label Grid.Row="3" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Blue}" />
+            <Label Grid.Row="2" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Green}" />
+            <Label Grid.Row="3" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Blue}" />
+            <Label Grid.Row="3" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Blue}" />
 
             <TextBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding ForeRed}" />
             <TextBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding ForeGreen}" />
             <TextBox Grid.Row="3" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding ForeBlue}" />
-            <TextBox Grid.Row="1" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding BackRed}" />
-            <TextBox Grid.Row="2" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding BackGreen}" />
-            <TextBox Grid.Row="3" Grid.Column="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding BackBlue}" />
+            <TextBox Grid.Row="1" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding BackRed}" />
+            <TextBox Grid.Row="2" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding BackGreen}" />
+            <TextBox Grid.Row="3" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding BackBlue}" />
 
             <TextBox Grid.Row="1" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding ForeHTML}" />
-            <TextBox Grid.Row="1" Grid.Column="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding BackHTML}" />
+            <TextBox Grid.Row="1" Grid.Column="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding BackHTML}" />
 
             <Rectangle Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Margin="5" Stroke="Black" >
                 <Rectangle.Fill>
                     <SolidColorBrush Color="{Binding ForeColor}" />
                 </Rectangle.Fill>
             </Rectangle>
-            <Rectangle Grid.Row="2" Grid.Column="5" Grid.RowSpan="2" Margin="5" Stroke="Black" >
+            <Rectangle Grid.Row="2" Grid.Column="6" Grid.RowSpan="2" Margin="5" Stroke="Black" >
                 <Rectangle.Fill>
                     <SolidColorBrush Color="{Binding BackColor}" />
                 </Rectangle.Fill>
@@ -66,18 +70,29 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Content="Choose" Margin="10" HorizontalAlignment="Center" />
-                <Button Grid.Column="1" Content="Pick" Margin="10" HorizontalAlignment="Center" />
+                <Button Grid.Column="0" Grid.ColumnSpan="2" Margin="10" HorizontalAlignment="Center" Click="ChooseFore" ToolTip="{x:Static res:Strings.WheelTip}" >
+                    <Button.Content>
+                        <Image Source="Img/picker.png"/>
+                    </Button.Content>
+                </Button>
+                
             </Grid>
-            <Grid Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" >
+            <Grid Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="0" Content="Choose" Margin="10" HorizontalAlignment="Center" />
-                <Button Grid.Column="1" Content="Pick" Margin="10" HorizontalAlignment="Center" />
+                <Button Grid.Column="0" Grid.ColumnSpan="2" Margin="10" HorizontalAlignment="Center" Click="ChooseBack" ToolTip="{x:Static res:Strings.WheelTip}" >
+                    <Button.Content>
+                        <Image Source="Img/picker.png"/>
+                    </Button.Content>
+                </Button>
+                
             </Grid>
 
+            <Button Grid.Row="4" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Click="What" Margin="10" >
+                <Image Source="Img/info.png"  />
+            </Button>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
@@ -118,12 +133,12 @@
 
             <Label Grid.Row="2" Grid.Column="2" Content="AA" HorizontalAlignment="Center" VerticalAlignment="Center" />
             <Label Grid.Row="3" Grid.Column="2" Content="AAA" HorizontalAlignment="Center" VerticalAlignment="Center" />
- 
+
             <Image Grid.Row="2" Grid.Column="1" Source="{Binding SmallTextAA}" />
             <Image Grid.Row="3" Grid.Column="1" Source="{Binding SmallTextAAA}" />
             <Image Grid.Row="2" Grid.Column="3" Source="{Binding LargeTextAA}" />
             <Image Grid.Row="3" Grid.Column="3" Source="{Binding LargeTextAAA}" />
-            
-        </Grid> 
+
+        </Grid>
     </Grid>
 </Window>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="ColorContraster.AProposDe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:res="clr-namespace:ColorContraster.Res"
+        xmlns:local="clr-namespace:ColorContraster"
+        mc:Ignorable="d"
+        Title="{x:Static res:Strings.ProposTitle}"
+        FontSize="16"
+        MinHeight="500"
+        MinWidth="600"
+        WindowStartupLocation="CenterOwner"
+        Height="500" Width="800">
+    <Grid Margin="12" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="6*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="{x:Static res:Strings.Title}" FontWeight="Bold" FontSize="20" />
+        <Label Grid.Row="1" Content="{Binding Version}" Margin="20,0,0,0" />
+        <Label Grid.Row="2" Content="{x:Static res:Strings.Author}" />
+        <TextBlock Grid.Row="3" Style="{StaticResource link}" Text="{x:Static res:Strings.MyGitURL}" Margin="20,0,0,0" PreviewMouseLeftButtonUp="GoLink"/>
+        <Label Grid.Row="4" Content="{x:Static res:Strings.UsePicker}" />
+        <TextBlock Grid.Row="5" Style="{StaticResource link}" Text="{x:Static res:Strings.EgorozhURL}" Margin="20,0,0,0" PreviewMouseLeftButtonUp="GoLink" Cursor="Hand" />
+        <TextBlock Grid.Row="6" Text="{x:Static res:Strings.Description}" TextWrapping="WrapWithOverflow" TextAlignment="Justify" Margin="10" />
+
+        <Image Grid.Row="1" Grid.RowSpan="5" HorizontalAlignment="Right" VerticalAlignment="Center" Source="Img/picker.png" />
+        <Button Grid.Row="7"  HorizontalAlignment="Center" Width="80" Click="Ok" >
+            <Image Source="Img/ok.png" />
+        </Button>
+    </Grid>
+</Window>

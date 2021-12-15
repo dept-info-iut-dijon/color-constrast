@@ -117,11 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Author" xml:space="preserve">
+    <value>Alexandre Guidet</value>
+  </data>
   <data name="BackName" xml:space="preserve">
     <value>Background color</value>
   </data>
   <data name="Blue" xml:space="preserve">
     <value>Blue</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>The purpose of the application is to calculate the contrast ratio between a foreground color and a background color, so that it can meet WCAG accessibility recommendations.
+Different possibilities are offered to choose the color (input of RGB components, HTML code, choice in a palette, "pipette" on the screen ...), the calculation of the ratio is automatic. Sample text using the chosen colors is provided. Icons directly indicate whether WCAG recommendations are met or not.</value>
+  </data>
+  <data name="EgorozhURL" xml:space="preserve">
+    <value>https://github.com/egorozh/Egorozh.ColorPicker</value>
   </data>
   <data name="ForeName" xml:space="preserve">
     <value>Foreground color</value>
@@ -131,6 +141,15 @@
   </data>
   <data name="LargeText" xml:space="preserve">
     <value>Large-size text</value>
+  </data>
+  <data name="MyGitURL" xml:space="preserve">
+    <value>https://github.com/dept-info-iut-dijon/color-constrast/</value>
+  </data>
+  <data name="PickerTitle" xml:space="preserve">
+    <value>Choose a color</value>
+  </data>
+  <data name="ProposTitle" xml:space="preserve">
+    <value>About</value>
   </data>
   <data name="Ratio" xml:space="preserve">
     <value>Contrast ratio</value>
@@ -147,7 +166,16 @@
   <data name="Title" xml:space="preserve">
     <value>Color contrast analyzer</value>
   </data>
+  <data name="UsePicker" xml:space="preserve">
+    <value>Use the ColorPicker component by Egorozh</value>
+  </data>
+  <data name="VersionNumber" xml:space="preserve">
+    <value>Version {0} - {1}</value>
+  </data>
   <data name="WCAG" xml:space="preserve">
     <value>WCAG rules</value>
+  </data>
+  <data name="WheelTip" xml:space="preserve">
+    <value>Choose a color</value>
   </data>
 </root>
