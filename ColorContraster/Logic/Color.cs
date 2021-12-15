@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Serialization;
 
 namespace Logic
 {
@@ -8,9 +9,11 @@ namespace Logic
     /// <summary>
     /// Simple color
     /// </summary>
-    public class Color
+    [DataContract] public class Color
     {
-        private byte red, green, blue;
+        [DataMember] private byte red;
+        [DataMember] private byte green;
+        [DataMember] private byte blue;
 
         private void FromInt(int rvb)
         {

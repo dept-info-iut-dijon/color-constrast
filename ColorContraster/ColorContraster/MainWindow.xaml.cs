@@ -23,15 +23,24 @@ namespace ColorContraster
     {
         private Logic.Analyzer analyzer;
         private ViewModels.AnalyzerVM analyzerVM;
+        private Storage.JSONStorage storage;
         public MainWindow()
         {
             InitializeComponent();
-            analyzer = new Logic.Analyzer();
-            analyzer.Background = new Logic.Color(50,50,50);
-            analyzer.Foreground = new Logic.Color(200, 200, 200);
+            string chemin = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string file = System.IO.Path.Combine(chemin, "colors.json");
+            storage = new Storage.JSONStorage(file);
+            analyzer = storage.Load();
+            /*analyzer.Background = new Logic.Color(50,50,50);
+            analyzer.Foreground = new Logic.Color(200, 200, 200); */
 
             DataContext = analyzerVM = new ViewModels.AnalyzerVM(analyzer);
+        }
 
+        protected override void OnClosed(EventArgs e)
+        {
+            storage.Save(analyzer);
+            base.OnClosed(e);
         }
 
         private void ChooseFore(object sender, RoutedEventArgs e)

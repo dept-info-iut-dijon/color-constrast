@@ -51,6 +51,19 @@
         "runtime": {
           "bin/placeholder/Logic.dll": {}
         }
+      },
+      "Storage/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Logic": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Storage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Storage.dll": {}
+        }
       }
     }
   },
@@ -105,12 +118,18 @@
       "type": "project",
       "path": "../Logic/Logic.csproj",
       "msbuildProject": "../Logic/Logic.csproj"
+    },
+    "Storage/1.0.0": {
+      "type": "project",
+      "path": "../Storage/Storage.csproj",
+      "msbuildProject": "../Storage/Storage.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Egorozh.ColorPicker.WPF.Dialog >= 5.0.0",
-      "Logic >= 1.0.0"
+      "Logic >= 1.0.0",
+      "Storage >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -152,6 +171,9 @@
           "projectReferences": {
             "C:\\Users\\aguidet.IUT21\\Source\\Repos\\color-constrast\\ColorContraster\\Logic\\Logic.csproj": {
               "projectPath": "C:\\Users\\aguidet.IUT21\\Source\\Repos\\color-constrast\\ColorContraster\\Logic\\Logic.csproj"
+            },
+            "C:\\Users\\aguidet.IUT21\\Source\\Repos\\color-constrast\\ColorContraster\\Storage\\Storage.csproj": {
+              "projectPath": "C:\\Users\\aguidet.IUT21\\Source\\Repos\\color-constrast\\ColorContraster\\Storage\\Storage.csproj"
             }
           }
         }

@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorContraster", "ColorContraster\ColorContraster.csproj", "{131FBFDE-040A-45E7-95FE-39A10A6E795B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColorContraster", "ColorContraster\ColorContraster.csproj", "{131FBFDE-040A-45E7-95FE-39A10A6E795B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{5AA59D3D-7F24-4DA7-A76B-88DC732F2E4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logic", "Logic\Logic.csproj", "{5AA59D3D-7F24-4DA7-A76B-88DC732F2E4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLogic", "TestLogic\TestLogic.csproj", "{A4123075-80D8-4C85-86D9-A3C26120180A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestLogic", "TestLogic\TestLogic.csproj", "{A4123075-80D8-4C85-86D9-A3C26120180A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Storage", "Storage\Storage.csproj", "{445233A7-712F-4522-B3B3-F2AC12029EFF}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{A4AB86CF-F650-4CB4-A522-9521CFAB0450}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,12 @@ Global
 		{A4123075-80D8-4C85-86D9-A3C26120180A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4123075-80D8-4C85-86D9-A3C26120180A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4123075-80D8-4C85-86D9-A3C26120180A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{445233A7-712F-4522-B3B3-F2AC12029EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{445233A7-712F-4522-B3B3-F2AC12029EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{445233A7-712F-4522-B3B3-F2AC12029EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{445233A7-712F-4522-B3B3-F2AC12029EFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4AB86CF-F650-4CB4-A522-9521CFAB0450}.Debug|Any CPU.ActiveCfg = Debug
+		{A4AB86CF-F650-4CB4-A522-9521CFAB0450}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

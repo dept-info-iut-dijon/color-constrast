@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Logic
@@ -7,10 +8,16 @@ namespace Logic
     /// <summary>
     /// The main logic class
     /// </summary>
-    public class Analyzer
+    [DataContract] public class Analyzer
     {
-        private Color foreground;
-        private Color background;
+        [DataMember] private Color foreground;
+        [DataMember] private Color background;
+
+        public Analyzer()
+        {
+            foreground = new Color(255, 255, 255);
+            background = new Color(0,0,0);
+        }
 
         /// <summary>
         /// Gets or sets the fore color

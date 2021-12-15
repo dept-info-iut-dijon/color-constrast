@@ -60,7 +60,7 @@ namespace ColorContraster {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/ColorContraster;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ColorContraster;V0.9.0.0;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
