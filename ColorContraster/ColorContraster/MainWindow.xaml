@@ -41,7 +41,7 @@
             <Label Grid.Row="1" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Red}" />
             <Label Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Green}" />
             <Label Grid.Row="2" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Green}" />
-            <Label Grid.Row="3" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Blue}" />
+            <Label Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Blue}" />
             <Label Grid.Row="3" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Center" Content="{x:Static res:Strings.Blue}" />
 
             <TextBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="4" Text="{Binding ForeRed}" />
