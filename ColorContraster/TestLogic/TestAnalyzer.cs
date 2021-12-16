@@ -12,8 +12,8 @@ namespace TestLogic
         public void TestBase()
         {
             Analyzer analyzer = new Analyzer();
-            Assert.Null(analyzer.Foreground);
-            Assert.Null(analyzer.Background);            
+            Assert.Equal(analyzer.Foreground, new Color(255,255,255));
+            Assert.Equal(analyzer.Background, new Color(0,0,0));            
         }
 
         [Fact]
