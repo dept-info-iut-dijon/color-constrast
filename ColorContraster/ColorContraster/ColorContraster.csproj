@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>Img\picker.ico</ApplicationIcon>
     <Authors>Alexandre Guidet</Authors>
@@ -23,10 +23,7 @@ Different possibilities are offered to choose the color (input of RGB components
     <None Remove="Img\picker.ico" />
     <None Remove="Img\picker.png" />
     <None Remove="Img\wheel.png" />
-    <None Include="..\..\..\..\..\Downloads\picker.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
+    <None Remove="picker.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -49,6 +46,9 @@ Different possibilities are offered to choose the color (input of RGB components
     <Resource Include="Img\wheel.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Content Include="picker.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
