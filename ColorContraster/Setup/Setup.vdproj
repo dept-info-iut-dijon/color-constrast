@@ -15,7 +15,13 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_E277E1F3C96A43BE89800F372B55733A"
+        "MsmKey" = "8:_3919DE9D97B84A3994B4866A9DA5EA16"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F251BB4AA8184AACBB7096132EE243DB"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -63,7 +69,7 @@
         "InstallerBootstrapper" = "3:2"
             "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
             {
-            "Enabled" = "11:TRUE"
+            "Enabled" = "11:FALSE"
             "PromptEnabled" = "11:TRUE"
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
@@ -118,6 +124,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F251BB4AA8184AACBB7096132EE243DB"
+            {
+            "SourcePath" = "8:..\\ColorContraster\\picker.ico"
+            "TargetName" = "8:picker.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_5E3AE37B940947FB8FB8F9DCBC1F73C2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -174,15 +200,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Analyseur contraste couleurs"
-        "ProductCode" = "8:{638018DB-D48C-4882-A364-10B553255F44}"
-        "PackageCode" = "8:{C440B989-0B58-48A6-87AD-183CA8DAA821}"
+        "ProductCode" = "8:{9EB06E20-B518-49AB-9BA5-D7CA09286890}"
+        "PackageCode" = "8:{7FEFD02B-9348-41E8-8CAB-78623F19BA1C}"
         "UpgradeCode" = "8:{501EEDF1-B8CA-492D-B4DE-C3CA3463B799}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:0.9"
+        "ProductVersion" = "8:0.9.3"
         "Manufacturer" = "8:AlexSoft"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -295,21 +321,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_9D7F69C4DDDE479091B4E0F483F9FFB4"
-            {
-            "Name" = "8:Analyseur de contraste de couleurs"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:"
-            "Folder" = "8:_B6BF6593A10F4132B48CAB6816633978"
-            "WorkingFolder" = "8:_5E3AE37B940947FB8FB8F9DCBC1F73C2"
-            "Icon" = "8:"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_AE6B23031A5C418CA118FD49B4286524"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_5EF446AD78CA4D2980BDD15D0049DAAB"
             {
             "Name" = "8:Analyseur de contraste"
             "Arguments" = "8:"
@@ -317,10 +329,24 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:"
+            "Target" = "8:_3919DE9D97B84A3994B4866A9DA5EA16"
+            "Folder" = "8:_B6BF6593A10F4132B48CAB6816633978"
+            "WorkingFolder" = "8:_5E3AE37B940947FB8FB8F9DCBC1F73C2"
+            "Icon" = "8:_F251BB4AA8184AACBB7096132EE243DB"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_68D5539611D24F3888779D1394E2EFD9"
+            {
+            "Name" = "8:Analyseur de contraste"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_3919DE9D97B84A3994B4866A9DA5EA16"
             "Folder" = "8:_67E13C8239B5425D86FDA95F2652ED3B"
             "WorkingFolder" = "8:_5E3AE37B940947FB8FB8F9DCBC1F73C2"
-            "Icon" = "8:"
+            "Icon" = "8:_F251BB4AA8184AACBB7096132EE243DB"
             "Feature" = "8:"
             }
         }
@@ -722,9 +748,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_21FAFD1483DD4B98A397E53212F3C948"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3919DE9D97B84A3994B4866A9DA5EA16"
             {
-            "SourcePath" = "8:"
+            "SourcePath" = "8:..\\ColorContraster\\obj\\Release\\net5.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_5E3AE37B940947FB8FB8F9DCBC1F73C2"
@@ -743,35 +769,7 @@
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:ContentFiles"
-            "OutputProjectGuid" = "8:{131FBFDE-040A-45E7-95FE-39A10A6E795B}"
-            "ShowKeyOutput" = "11:TRUE"
-                "ExcludeFilters"
-                {
-                }
-            }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_E277E1F3C96A43BE89800F372B55733A"
-            {
-            "SourcePath" = "8:..\\ColorContraster\\obj\\Release\\net5.0-windows\\ColorContraster.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_5E3AE37B940947FB8FB8F9DCBC1F73C2"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:Built"
+            "OutputGroupCanonicalName" = "8:PublishItems"
             "OutputProjectGuid" = "8:{131FBFDE-040A-45E7-95FE-39A10A6E795B}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
