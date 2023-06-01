@@ -10,7 +10,7 @@ namespace ColorContraster.ViewModels
         {
             get
             {                
-                return string.Format(Res.Strings.VersionNumber, GetType().Assembly.GetName().Version.ToString(2), 2021);
+                return string.Format(Res.Strings.VersionNumber, GetType().Assembly.GetName().Version.ToString(2), 2023);
             }
         }
     }

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>Img\picker.ico</ApplicationIcon>
     <Authors>Alexandre Guidet</Authors>
@@ -12,8 +12,8 @@ Different possibilities are offered to choose the color (input of RGB components
     <PackageIcon>picker.png</PackageIcon>
     <RepositoryUrl>https://github.com/dept-info-iut-dijon/color-constrast/</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
